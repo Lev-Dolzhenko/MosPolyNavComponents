@@ -1,0 +1,89 @@
+.menu__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  max-width: 1032px; //Ширину указал, временно, по макет, кода будем делать главную страницу, зададим через clamp
+  height: 2126px; //Пока указал фиксированную высоту по макету, когда будем главную страницу создавать, зададим 'height: 100vh'
+
+  border: 1px solid rgb(160, 164, 173);
+  border-radius: 0px 72px 72px 0px;
+  background: rgb(19, 20, 22);
+
+  padding: 97px;
+
+  position: relative;
+}
+
+.menu__button_close {
+  position: absolute;
+  right: 45px;
+  top: 45px;
+  background-color: rgba(217, 217, 217);
+  border-radius: 50%;
+
+  width: 48px;
+  height: 48px;
+}
+
+.menu__button_close svg {
+  fill: none;
+}
+
+.menu__title {
+  margin-bottom: 84px;
+}
+
+.title3_menu {
+  color: rgb(240, 240, 240);
+  font-size: 78px;
+  font-weight: 700;
+  line-height: 107px;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+}
+
+.menu__item {
+  position: relative;
+
+  &:not(:last-child):before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -75%;
+    transform: translateY(75%);
+    height: 3px;
+    width: 100%;
+    background-color: rgb(160, 164, 173);
+  }
+}
+
+.menu__link {
+  display: flex;
+  align-items: center;
+  column-gap: 48px;
+
+  span {
+    color: rgb(240, 240, 240);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 66px;
+  }
+}
+
+.menu__info {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.menu__text {
+  color: rgb(160, 164, 173);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 46px;
+}

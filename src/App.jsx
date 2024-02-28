@@ -3,7 +3,12 @@ import { ButtonHome } from "./components/buttonHome/ButtonHome";
 import { ButtonLike } from "./components/buttonLike/ButtonLike";
 import { ButtonZoom } from "./components/buttonZoom/ButtonZoom";
 import { FloorScroll } from "./components/floorsScroll/FloorScroll";
-
+import { Menu } from "./components/menu/Menu";
+import { SearchInput } from "./components/searchInput/SearchInput";
+import { ButtonTouletMen } from "./components/buttonTouletMen/ButtonTouletMen";
+import { ButtonTouletWoman } from "./components/buttonTouletWoman/ButtonTouletWoman";
+import { SearchFloor } from "./components/searchFloor/SearchFloor";
+import { ButtonCloseSearch } from "./components/buttonCloseSearch/ButtonCloseSearch";
 function App() {
   return (
     <div className="app">
@@ -23,6 +28,24 @@ function App() {
           </div>
           <div className="app__item">
             <ButtonZoom />
+          </div>
+          <div className="app__item">
+            <Menu />
+          </div>
+          <div className="app__item">
+            <SearchInput />
+          </div>
+          <div className="app__item">
+            <ButtonTouletMen />
+          </div>
+          <div className="app__item">
+            <ButtonTouletWoman />
+          </div>
+          <div className="app__item">
+            <SearchFloor />
+          </div>
+          <div className="app__item">
+            <ButtonCloseSearch />
           </div>
         </div>
       </div>
