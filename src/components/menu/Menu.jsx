@@ -5,6 +5,7 @@ import serviceIcon from "./serviceIcon.svg";
 import problemIcon from "./problemIcon.svg";
 import settingsIcon from "./settingsIcon.svg";
 import logotype from "./logotype.png";
+import { MenuItem } from "./MenuItem";
 
 export const Menu = () => {
   return (
@@ -20,24 +21,9 @@ export const Menu = () => {
             </h3>
           </div>
           <ul className="menu__list">
-            <li className="menu__item">
-              <a className="menu__link" href="#!">
-                <img src={serviceIcon} alt="service icon" />
-                <span>О сервисе</span>
-              </a>
-            </li>
-            <li className="menu__item">
-              <a className="menu__link" href="#!">
-                <img src={problemIcon} alt="problem icon" />
-                <span>Сообщить о проблеме</span>
-              </a>
-            </li>
-            <li className="menu__item">
-              <a className="menu__link" href="#!">
-                <img src={settingsIcon} alt="settings icon" />
-                <span>Настройки</span>
-              </a>
-            </li>
+            <MenuItem icon={serviceIcon} text={"О сервисе"} />
+            <MenuItem icon={problemIcon} text={"Сообщить о проблеме"} />
+            <MenuItem icon={settingsIcon} text={"Настройки"} />
           </ul>
         </div>
         <div className="menu__info">

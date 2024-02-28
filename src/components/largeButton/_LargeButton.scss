@@ -1,0 +1,15 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgb(76, 81, 92);
+  border-radius: 72px;
+  box-shadow: 0px 0px 24px 0px rgba(20, 20, 20, 0.4);
+  background: rgb(28, 31, 38);
+}
+
+.button_large {
+  width: 144px;
+  height: 144px;
+}

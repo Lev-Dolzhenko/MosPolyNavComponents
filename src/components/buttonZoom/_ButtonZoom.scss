@@ -10,5 +10,17 @@
   box-shadow: 0px 0px 24px 0px rgba(20, 20, 20, 0.4);
   background: rgb(28, 31, 38);
 
-  padding: 42px;
+  padding: 42px 0;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 144px;
+  }
+
+  .buttons__zoom_button {
+    width: 100%;
+  }
 }
