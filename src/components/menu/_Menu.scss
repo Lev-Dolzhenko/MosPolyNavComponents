@@ -24,6 +24,16 @@
 
   width: 48px;
   height: 48px;
+
+  transition: stroke 0.2s, background-color 0.2s;
+}
+
+.menu__button_close:active svg path {
+  stroke: #9cbbff;
+}
+
+.menu__button_close:active {
+  background-color: #1c1f26;
 }
 
 .menu__button_close svg {

@@ -7,9 +7,39 @@
   border-radius: 72px;
   box-shadow: 0px 0px 24px 0px rgba(20, 20, 20, 0.4);
   background: rgb(28, 31, 38);
+
+  transition: background-color 0.2s;
 }
 
 .button_small {
   width: 96px;
   height: 96px;
+}
+
+.button_small_close:active svg path {
+  stroke: #1c1f26;
+  transition: stroke 0.2s;
+}
+
+.button_small_woman:active svg path,
+.button_small_woman:active svg circle {
+  stroke: #1c1f26;
+}
+
+.button_small_woman:active {
+  background-color: #f783cb !important;
+}
+
+.button_small_men:active svg path,
+.button_small_men:active svg circle {
+  stroke: #1c1f26;
+}
+
+.button:hover {
+  background-color: #262b36;
+}
+
+.button:active {
+  background-color: #9cbbff;
+  color: #1c1f26;
 }
