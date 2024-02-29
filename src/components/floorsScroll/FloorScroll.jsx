@@ -14,8 +14,9 @@ export const FloorScroll = () => {
         <li key={index} className={`floors__item floors__item_${index}`}>
           <button
             onClick={() => handleIsActive(index)}
-            className="floors__button"
-            style={{color: isActive === index ? 'rgb(28, 31, 38)' : ''}}
+            className={`floors__button ${
+              isActive === index ? "floor__button_active" : ""
+            }`}
           >
             {number}
           </button>

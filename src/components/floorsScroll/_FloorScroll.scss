@@ -56,12 +56,14 @@
   display: block;
 }
 
-
 .floors__item_0 {
   position: relative;
 }
 
 .floors__button-test {
-z-index: 1;
+  z-index: 1;
 }
 
+.floor__button_active {
+  color: rgb(28, 31, 38);
+}
